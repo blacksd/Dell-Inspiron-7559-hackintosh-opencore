@@ -15,13 +15,21 @@
 
 ## Current Versions
 
-|          | Version              |
-| -------- | -------------------- |
-| macOS    | Big Sur 12.4 (21F79) |
-| OpenCore | 0.8.0                |
-| rEFInd   | 0.13.3.1             |
+|           | Version              |
+| --------- | -------------------- |
+| macOS     | Big Sur 12.4 (21F79) |
+| OpenCore  | 0.8.0                |
+| rEFInd    | 0.13.3.1             |
+| DELL BIOS | 1.2.2                |
 
 rEFInd is used to dual boot with Windows 10 on the same SSD (and to boot external drives as well)
+
+DELL BIOS is at a rather older version (1.2.2) as I discovered that later versions will just not boot - if you're coming from a Windows install, watch out when disabling Secure Boot, as you could end up in a state where you can't press F2 to enter the setting interface and need to perform a CMOS reset (and that requires a [serious disassembly](https://www.youtube.com/watch?v=QRIZiY89uqc)). Settings are as follows:
+
+![](img/1-main.jpg )
+![](img/2-advanced.jpg)
+![](img/3-security.jpg)
+![](img/4-boot.jpg)
 
 ## Please note
 
@@ -43,6 +51,7 @@ Remember to generate a valid SMBios and add it to `conflig.plist`. Refer to the 
 * [x] SSD TRIM
 * [x] Wireless and Bluetooth
 * [x] Keyboard special keys for screen brightness, keyboard backlight and audio control  
+* [x] Touchpad, with multi-finger gestures
 * [x] Webcam
 
 iServices are working just fine
