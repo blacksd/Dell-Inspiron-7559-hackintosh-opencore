@@ -1,5 +1,7 @@
 # Dell Inspiron 7559 Hackintosh w/OpenCore
 
+> :warning: This repo is archived since I don't own this laptop anymore. Fork away, and good luck! :star:
+
 ## System Specs
 
 * Processor: Intel Core i7-6700HQ 2.6GHz (3.5 GHz Turbo) 4 cores, 8 threads
